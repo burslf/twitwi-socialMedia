@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Prompt', sans-serif;
+}
+body {
+    background-color: #0E1111 !important;
+}
+
+.mycontainer {
+    padding: 0px 40px;
+    display: flex;
+}
+
+.tweet-container {
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    position: relative;
+    top: 10vh;
+}
+
+.tweet-form {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tweet-form textarea {
+    width: 100%;
+    resize: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 15px;
+    position: relative;
+    font-size: 17px;
+}
+
+.tweet-form textarea:focus {
+    outline: none;
+}
+.tweet-button {
+    border-radius: 15px !important;
+    padding: 15px 30px !important;
+}
+
+.tweet-button:focus {
+    box-shadow: none !important;
+    border-color: none !important;
+}
+
+.all-tweets-area {
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet-body {
+    width: 100%;
+    border-radius: 7px;
+    background-color: #f8f9fa;
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.tweet-date{
+    font-size: 14px;
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}  
+.tweet-title {
+    margin: 15px 15px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #111111;
+    word-break: keep-all;
+    hyphens: auto;
+    font-weight: 600;
+}
+
+.tweet-username {
+    color: #111111;
+    text-decoration: none;
+}
+.tweet-username:hover {
+    text-decoration: none;
+}
+.delete-tweet-button {
+    cursor: pointer;
+    fill: #111111 !important
+}
+.tweet-content {
+    margin: 0px 20px 20px; 
+    word-break: break-all;
+    hyphens: auto;
+    color: #111111
+}
+.tweet-bottom {
+    display: flex;
+    justify-content: space-between;
+    color: #111111;
+}
+.like-button, .unlike-button {
+    fill: red !important;
+    cursor: pointer;
+}
+.like-buttons {
+    margin-left: 15px;
+}
+.like-counter {
+    margin-left: 5px;
+}
+
+.comments-button {
+    fill: #100a44 !important;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.comments-counter{
+    margin-left: 10px;
+}
+
+.reply-button {
+    fill: #100a44 !important;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.max-chars {
+    border-radius: 4px;
+    padding: 4px 7px;
+    background-color: #F8D7DA;
+    color: #721C24;
+    left: 15px;
+    bottom: 15px;
+    margin: 10px;
+}
+
+.tweet-profile-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-miniature {
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.filter-tweets {
+    color: #111111 !important;
+    font-size: 15px !important;
+    padding: 2px 4px !important;
+    margin: 20px 0;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-tweets:focus, .filter-tweets:active {
+    box-shadow: none !important
+}
+.filter-icon {
+    fill: #111111 !important
+}
+.like-button:hover {
+    background-color: whitesmoke;
+}
+.log-input {
+    margin: 10px;
+}
+.log-profile {
+    font-size: 20px;
+}
+.modal-content {
+    width: 100% !important;
+    margin: 0 auto;
+}
+.modal-dialog {
+    margin: 40vh auto !important;
+}
+
+.modalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700 !important;
+}
+.logout-buttons button {
+    margin: 0 5px
+}
+.modalContainer button {
+    margin-top: 17px;
+    background-color: #3c3a54 !important;
+    color: white;
+    border: none;
+    padding: 5px 30px;
+}
+
+.modalContainer button:focus {
+    box-shadow: none;
+}
+.homepage-content {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.homepage-content h3 {
+    margin-bottom: 20px;
+}
+
+.scroll-up-btn{
+    fill: #8d8d8d !important;
+    position: relative;
+    right: 0px !important;
+    bottom: 0px;
+}
+
+@media only screen and (max-width:480px) {
+    .max-chars {
+        left: 0px;
+        bottom: -60px !important;
+    }
+    
+    .tweet-form textarea {
+        padding-bottom: 50px;
+    }
+    
+    .all-tweets-area {
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width:580px) {
+    .modal-content{
+        width: 70% !important;
+    }
+}

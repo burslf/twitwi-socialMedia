@@ -1,0 +1,124 @@
+.profile-pic {
+    border-radius: 8px;
+    width: 96px;
+    height: 96px;
+    cursor: pointer;
+}
+.photo-container {
+    width: 98px;
+    height: 98px;
+    border-radius: 8px;
+}
+.userprofile-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    position: relative;
+    top: 15vh;
+    color: white;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.follow-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-bottom: 3px;
+    height: 100%;
+    border-left: 1px solid white;
+}
+.follow-button {
+    padding: 3px 9px !important;
+    margin-left: 3px;
+}
+.follow-button:focus , .follow-button:visited{
+    box-shadow: none;
+    background-color: whitesmoke;
+}
+
+.unfollow-button {
+    background-color: #d13232 !important;
+    border: none !important;
+    color: white;
+    padding: 3px 9px !important;
+    margin-left: 3px
+}
+.unfollow-button:hover, .unfollow-button:active {
+    color: white !important;
+}
+.unfollow-button:focus {
+    box-shadow: none !important;
+    background-color: whitesmoke;
+}
+.followers-following {
+    display: flex;
+    flex-direction: column;
+}
+
+.followers, .following {
+    margin: 5px;
+    padding: 3px 9px;
+    border-radius: 6px;
+}
+.followers span, .following span {
+    font-weight: 600;
+}
+
+.userprofile-username {
+    justify-items: center;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.userprofil-main-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.userprofile-bio {
+    width: 100%;
+    font-size: 15px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.userprofile-bio p {
+    word-wrap:break-word ;
+    margin: 0
+}
+.bio-input:disabled {
+    overflow-y: hidden;
+}
+.modal-image {
+    width: 100%;
+    
+    height: auto;    
+}
+
+.close-modal {
+    align-self: flex-end;
+    margin-bottom: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.ReactModal__Content {
+    background-color: transparent !important;
+    border: none !important
+}

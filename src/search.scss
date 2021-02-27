@@ -1,0 +1,42 @@
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.user-list{
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tweet-list{
+    width: 90%;
+    margin-top: 30px;
+}
+
+.tweet-header {
+    border-radius: 7px;
+    background-color: #f8f9fa;
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.filter-result-button {
+    background-color: #cfcfcf !important;
+    border-color: #111111;
+    border-radius: 6px !important;
+    margin: 10px;
+}
+.filter-result-button:focus {
+    box-shadow: none !important;
+}
+
+.search-button {
+    margin: 10px;
+}
+.search-button:focus {
+    box-shadow: none !important;
+}

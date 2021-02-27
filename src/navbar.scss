@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+.my-nav {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    font-weight: 600;
+    margin: 0 auto;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.nav-links {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    width: 60%;
+    justify-self: flex-end;
+}
+.nav-links ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 !important;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.logo {
+    letter-spacing: 3px;
+    color: white;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 37px;
+    width: 30%;
+}
+
+
+.icon__icon {
+    fill: white;
+}
+
+@media screen and (max-width:560px) {
+    body {
+        overflow-x: hidden;
+    }
+    .mycontainer {
+        padding: 0px 50px !important;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .nav-links {
+        justify-content: center !important
+    }
+    .nav-links ul {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        background: transparent;
+        margin: 0 !important;
+    }
+    .nav-links ul li {
+        display: flex;
+        justify-content: flex-start;
+        margin: 5px;
+    }
+    .nav-links {
+        background: transparent;
+        position: fixed;
+        left: 0px;
+        height: 100vh;
+        top: 0vh;
+        width: 40px;
+        display: flex;
+        opacity: 0.90;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        // transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 1;
+        border-radius: 15px;
+    }
+
+    .nav-active {
+        transform: translateX(-30%);
+    }
+}

@@ -1,0 +1,146 @@
+.profile-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    position: relative;
+    top: 15vh;
+    color: white;
+    margin-bottom: 400px;
+}
+
+.profile-title {
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.image-profile-container {
+    width: 96px;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.edit-profile-image-button {
+    padding: 0px;
+    width: 30px;
+    align-self: flex-end;
+    margin-top: -20px;
+}
+
+.edit-profile-image {
+    display: none
+}
+.edit-profile-image-button:focus {
+    box-shadow: none;
+}
+.profile-image {
+    border-radius: 8px;
+}
+.setting-image-container {
+    width: 98px;
+    height: 98px;
+    border: 2px solid rgb(112, 112, 112);
+        border-radius: 8px;
+}
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container input {
+    font-size: 14px;
+}
+
+.username-input {
+    margin: 10px;
+    background-color: transparent;
+    color: white !important;
+    border: 2px solid rgb(112, 112, 112)
+}
+.username-input:focus {
+    box-shadow: none;
+    outline: none !important;
+    background-color: transparent;
+    border: 2px solid rgb(112, 112, 112) !important
+}
+.username-input:disabled {
+    color: #111111 !important;
+}
+.edit-button, .edit-password-button{
+    font-size: 14px;
+    padding: 3px 6px;
+    color: #111111 !important;
+    margin-top:15px
+}
+
+.save-username:focus, .edit-username:focus {
+    box-shadow: none;
+    outline: none !important;
+}
+
+.profile-buttons{
+    margin-top: 10px
+}
+
+.btn-google {
+    margin-top: 20px;
+}
+
+#sign-up {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.email-input {
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: rgb(0, 0, 0) !important;
+    font-size: 1.1rem;
+    border: 2px solid rgb(112, 112, 112);
+}
+.bio-input {
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: rgb(255, 255, 255) !important;
+    font-size: 1.1rem;
+    border: 2px solid rgb(112, 112, 112);
+        resize: none;
+}
+.bio-input:focus {
+    background-color: transparent;
+    box-shadow: none;
+    border-color: white
+}
+.bio-input:disabled {
+    color: #111111 !important;
+    overflow: hidden;
+}
+.password-input {
+    margin: 10px;
+    // margin-bottom: 20px;
+    background-color: transparent;
+    color: white !important;
+    font-size: 1.1rem;
+    border: 2px solid rgb(112, 112, 112);
+}
+
+.password-input:focus {
+    box-shadow: none;
+    outline: none !important;
+    background-color: transparent;
+    border: 2px solid rgb(112, 112, 112) !important
+}
+
+.password-input:disabled {
+    color: #111111 !important;
+}
+.display-save {
+    display: none;
+}
