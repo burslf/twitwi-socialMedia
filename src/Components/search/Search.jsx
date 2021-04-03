@@ -2,10 +2,10 @@ import { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
-import firebase from "../firebase-cred/firebase";
-import TweetBody from "./TweetBody";
+import firebase from "../../firebase-cred/firebase";
+import TweetBody from "../tweet-body/TweetBody";
 import { Link } from "react-router-dom";
-import "../search.scss";
+import "./search.scss";
 const Search = (props) => {
   const [input, setInput] = useState("");
   const [users, setUsers] = useState([]);

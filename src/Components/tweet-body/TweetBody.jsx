@@ -1,9 +1,10 @@
 import { useState, useContext } from "react";
-import { AuthContext } from "../auth";
+import { AuthContext } from "../../auth";
 import { Link } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import moment from "moment";
+import './tweetBody.scss'
 
 const TweetBody = (props) => {
   const [smShow, setSmShow] = useState(false);

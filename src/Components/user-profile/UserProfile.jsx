@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from "react";
-import { AuthContext } from "../auth";
-import firebase from "../firebase-cred/firebase";
-import "../userprofile.scss";
+import { AuthContext } from "../../auth";
+import firebase from "../../firebase-cred/firebase";
+import "./userprofile.scss";
 import Button from "react-bootstrap/Button";
-import MonModal from "./MonModal";
+import MonModal from "../MonModal";
 import Spinner from 'react-bootstrap/Spinner'
-import TweetBody from './TweetBody'
+import TweetBody from '../tweet-body/TweetBody'
 
 const UserProfile = (props) => {
   const [userInfo, setUserInfos] = useState({});

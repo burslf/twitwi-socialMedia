@@ -1,9 +1,10 @@
 import { useContext, useEffect, useRef, useState } from "react";
-import TweetForm from "./TweetForm";
-import TweetBody from "./TweetBody";
-import firebase from "../firebase-cred/firebase";
+import './tweetsContainer.scss'
+import TweetForm from "../TweetForm";
+import TweetBody from "../tweet-body/TweetBody";
+import firebase from "../../firebase-cred/firebase";
 import shortid from "shortid";
-import { AuthContext } from "../auth";
+import { AuthContext } from "../../auth";
 import { Button } from "react-bootstrap";
 import moment from "moment";
 

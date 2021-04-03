@@ -1,8 +1,8 @@
-import "../navbar.scss";
+import "./navbar.scss";
 import { Link } from 'react-router-dom'
-import firebase from '../firebase-cred/firebase'
+import firebase from '../../firebase-cred/firebase'
 import 'firebase/auth'
-import {AuthContext} from '../auth'
+import {AuthContext} from '../../auth'
 import { useContext, useState } from 'react'
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
@@ -11,9 +11,6 @@ const Navbar = (props) => {
   const [smShow, setSmShow] = useState(false);
 
   const {currentUser} = useContext(AuthContext)
-
-  const handleLogout = () => {
-  }
 
   const logout = () => {
     setSmShow(false)

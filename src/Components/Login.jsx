@@ -8,7 +8,7 @@ import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
 import Overlay from "react-bootstrap/Overlay";
 import Popover from "react-bootstrap/Popover";
-import {getKeywords} from './TweetsContainer'
+import {getKeywords} from './tweet-container/TweetsContainer'
 
 const Login = ({ history }) => {
   const [target, setTarget] = useState(null);

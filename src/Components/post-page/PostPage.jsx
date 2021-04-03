@@ -1,6 +1,6 @@
-import TweetBody from './TweetBody'
-import '../postPage.scss'
-import firebase from '../firebase-cred/firebase'
+import TweetBody from '../tweet-body/TweetBody'
+import './postPage.scss'
+import firebase from '../../firebase-cred/firebase'
 import { useEffect, useState } from 'react'
 import { Form } from 'react-bootstrap'
 

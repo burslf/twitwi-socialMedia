@@ -1,12 +1,12 @@
-import "../settings.scss";
+import "./settings.scss";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Overlay from "react-bootstrap/Overlay";
 import Popover from "react-bootstrap/Popover";
 import { useRef, useState, useEffect, useContext } from "react";
-import firebase from "../firebase-cred/firebase";
+import firebase from "../../firebase-cred/firebase";
 import "firebase/storage";
-import { AuthContext } from "../auth";
+import { AuthContext } from "../../auth";
 
 const Settings = (props) => {
   const [username, setUsername] = useState("");
