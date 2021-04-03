@@ -1,3 +1,7 @@
+## Welcome to my social media :)
+
+### Live example of the app =>> https://twi-twi.netlify.app/
+
 (There is some comments in my code but that's because I'm working on adding comments to each tweets.)
 
 My social media has the follow features:
@@ -10,4 +14,10 @@ My social media has the follow features:
 
 I used moment.js for timing the posts (X min ago/X hours ago).
 
-Link to the app =>> https://twi-twi.netlify.app/
+## Important !
+
+All rights are reserved and it is NOT Open Source or Free.
+
+You cannot modify or redistribute this code without explicit permission from the copyright holder.
+
+In the particular case of GitHub, you can fork the repository and view the code, but nothing more.
