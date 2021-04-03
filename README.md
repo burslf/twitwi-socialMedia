@@ -1,3 +1,5 @@
+## Welcome to my social media :)
+
 (There is some comments in my code but that's because I'm working on adding comments to each tweets.)
 
 My social media has the follow features:
