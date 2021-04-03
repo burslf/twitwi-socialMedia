@@ -2,6 +2,8 @@
 
 ### Live example of the app =>> https://twi-twi.netlify.app/
 
+Project made with React and Firebase
+
 (There is some comments in my code but that's because I'm working on adding comments to each tweets.)
 
 My social media has the follow features:
