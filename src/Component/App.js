@@ -14,11 +14,11 @@ import UserProfile from "./UserProfile";
 import Spinner from 'react-bootstrap/Spinner'
 import {getKeywords} from './TweetsContainer'
 import PostPage from "./PostPage";
-import ScrollToTop from "react-scroll-up"
 
 function App() {
   const [username, setUsername] = useState("");
   const [isLoading, setLoading] = useState(true)
+
   const {currentUser} = useContext(AuthContext);
 
   const userNameRef = firebase.auth().currentUser;
@@ -97,9 +97,6 @@ function App() {
           </Route>
         </Switch>
       </div>
-      <ScrollToTop showUnder={0}>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="32" height="32" preserveAspectRatio="xMinYMin" className="icon__icon scroll-up-btn"><path d="M10 9.172l3.536 3.535a1 1 0 0 0 1.414-1.414L10.707 7.05a1 1 0 0 0-1.414 0L5.05 11.293a1 1 0 0 0 1.414 1.414L10 9.172zM10 20C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10z"></path></svg>
-      </ScrollToTop>
     </Router>
   );
 }

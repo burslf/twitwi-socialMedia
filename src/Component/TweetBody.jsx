@@ -55,8 +55,8 @@ const TweetBody = (props) => {
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='-3 -2 24 24'
-              width='20'
-              height='20'
+              width='24'
+              height='24'
               preserveAspectRatio='xMinYMin'
               onClick={() => {
                 setDocID(tweet.docID);

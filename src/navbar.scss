@@ -8,8 +8,8 @@
     min-height: 10vh;
     font-weight: 600;
     margin: 0 auto;
-    position: absolute;
-    background-color: transparent;
+    position: fixed;
+    background-color: #1c1c1c;
     z-index: 1;
 }
 
@@ -38,7 +38,7 @@
     letter-spacing: 3px;
     color: white;
     font-family: 'Berkshire Swash', cursive;
-    font-size: 37px;
+    font-size: 50px;
     width: 30%;
 }
 
@@ -69,7 +69,7 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
-        background: transparent;
+        background: #1c1c1c;
         margin: 0 !important;
     }
     .nav-links ul li {
@@ -78,18 +78,16 @@
         margin: 5px;
     }
     .nav-links {
-        background: transparent;
+        background: #1c1c1c;
         position: fixed;
         left: 0px;
         height: 100vh;
         top: 0vh;
         width: 40px;
         display: flex;
-        opacity: 0.90;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        // transform: translateX(100%);
         transition: transform 0.3s ease-in;
         z-index: 1;
         border-radius: 15px;

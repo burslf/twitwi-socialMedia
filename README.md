@@ -11,11 +11,3 @@ My social media has the follow features:
 I used moment.js for timing the posts (X min ago/X hours ago).
 
 Link to the app =>> https://twi-twi.netlify.app/
-
-## IMPORTANT !
-
-All rights are reserved and it is NOT Open Source nor Free.
-
-You cannot modify or redistribute this code without explicit permission from the copyright holder.
-
-In the particular case of GitHub, you can fork the repository and view the code, but nothing more.

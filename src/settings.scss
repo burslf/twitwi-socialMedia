@@ -14,8 +14,8 @@
 
 .profile-title {
     color: white;
-    margin-top: 10px;
-    font-size: 14px;
+    margin-top: 20px;
+    font-size: 16px;
 }
 .image-profile-container {
     width: 96px;
@@ -54,14 +54,11 @@
     align-items: center;
 }
 
-.form-container input {
-    font-size: 14px;
-}
-
 .username-input {
     margin: 10px;
     background-color: transparent;
     color: white !important;
+    font-size: 1.1rem;
     border: 2px solid rgb(112, 112, 112)
 }
 .username-input:focus {
@@ -71,13 +68,11 @@
     border: 2px solid rgb(112, 112, 112) !important
 }
 .username-input:disabled {
-    color: #111111 !important;
+    color: #1c1c1c !important;
 }
 .edit-button, .edit-password-button{
-    font-size: 14px;
-    padding: 3px 6px;
-    color: #111111 !important;
-    margin-top:15px
+    color: #1c1c1c !important;
+    margin-top: 30px
 }
 
 .save-username:focus, .edit-username:focus {
@@ -119,7 +114,7 @@
     border-color: white
 }
 .bio-input:disabled {
-    color: #111111 !important;
+    color: #1c1c1c !important;
     overflow: hidden;
 }
 .password-input {
@@ -139,7 +134,7 @@
 }
 
 .password-input:disabled {
-    color: #111111 !important;
+    color: #1c1c1c !important;
 }
 .display-save {
     display: none;

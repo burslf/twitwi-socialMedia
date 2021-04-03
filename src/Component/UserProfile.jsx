@@ -117,7 +117,6 @@ const UserProfile = (props) => {
       console.log(orderedResult)
       setTweets(orderedResult);
   }
-  
   if(currentUser) {
     return (
         <div className='userprofile-container'>
