@@ -1,6 +1,6 @@
 import { useCallback, useContext, useEffect, useState, useRef } from "react";
-import { withRouter, Redirect } from "react-router";
 import firebase from "../firebase-cred/firebase";
+import { Navigate } from "react-router-dom";
 import { AuthContext } from "../auth";
 import "firebase/auth";
 import Button from "react-bootstrap/Button";
@@ -44,7 +44,7 @@ const Login = ({ history }) => {
   const { currentUser } = useContext(AuthContext);
 
   if (currentUser) {
-    return <Redirect to='/profile-page' />;
+    return <Navigate to='/profile-page' />;
   }
 
   const googleSignIn =  () => {
@@ -116,12 +116,12 @@ const Login = ({ history }) => {
           containerPadding={30}
         >
           <Popover id='popover-contained'>
-            <Popover.Title as='h3'>Sorry !</Popover.Title>
-            <Popover.Content>You entered a wrong password, please try again.</Popover.Content>
+            <Popover.Header as='h3'>Sorry !</Popover.Header>
+            <Popover.Body>You entered a wrong password, please try again.</Popover.Body>
           </Popover>
         </Overlay>
     </div>
   );
 };
 
-export default withRouter(Login);
+export default Login;

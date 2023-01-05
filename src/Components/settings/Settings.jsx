@@ -20,7 +20,7 @@ const Settings = (props) => {
   const [showErrorPassword, setShowErrorPassword] = useState(false)
   const [showSuccess, setShowSuccess] = useState(false);
   const [showEmpty, setShowEmpty] = useState(false);
-  const [profilePic, setProfilePic] = useState(null);
+  const [profilePic, setProfilePic] = useState("");
 
   const { currentUser } = useContext(AuthContext);
   const [target, setTarget] = useState(null);
@@ -61,8 +61,8 @@ const Settings = (props) => {
 
   useEffect(() => {
     getUserName();
-    getUserInfo();
     getBio();
+
   }, [currentUser]);
 
   const handleSaveUsername = (e) => {
@@ -189,7 +189,8 @@ const handleConfirmPasswordChange = (e) => {
     }
   }
   return (
-    <div className='profile-container'>
+    <>
+     <div className='profile-container'>
       <div className='image-profile-container'>
         <div className='setting-image-container'>
         <img
@@ -224,11 +225,11 @@ const handleConfirmPasswordChange = (e) => {
         </Button>}
       <h3 className='profile-title'> Username </h3>
       <Form className='form-container'>
-        <Form.File
+        <Form.Select
           className='edit-profile-image'
           id='custom-file'
           label='Custom file input'
-          custom
+          
           onChange={uploadImage}
         />
           <Form.Control
@@ -300,7 +301,7 @@ const handleConfirmPasswordChange = (e) => {
           containerPadding={30}
         >
           <Popover id='popover-contained'>
-            <Popover.Title as='h3'>Saved !</Popover.Title>
+            <Popover.Header as='h3'>Saved !</Popover.Header>
           </Popover>
         </Overlay>
 
@@ -312,8 +313,8 @@ const handleConfirmPasswordChange = (e) => {
           containerPadding={30}
         >
           <Popover id='popover-contained'>
-            <Popover.Title as='h3'>Sorry, {username} !</Popover.Title>
-            <Popover.Content>The field can't be empty.</Popover.Content>
+            <Popover.Header as='h3'>Sorry, {username} !</Popover.Header>
+            <Popover.Body>The field can't be empty.</Popover.Body>
           </Popover>
         </Overlay>
 
@@ -325,12 +326,14 @@ const handleConfirmPasswordChange = (e) => {
           containerPadding={30}
         >
           <Popover id='popover-contained'>
-            <Popover.Title as='h3'>Sorry, {username} !</Popover.Title>
-            <Popover.Content>The passwords do not match.</Popover.Content>
+            <Popover.Header as='h3'>Sorry, {username} !</Popover.Header>
+            <Popover.Body>The passwords do not match.</Popover.Body>
           </Popover>
         </Overlay>
       </Form>
     </div>
+    
+    </>
   );
 };
 

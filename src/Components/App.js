@@ -2,7 +2,7 @@ import "../index.scss";
 import TweetsContainer from "./tweet-container/TweetsContainer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "./navbar/Navbar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Settings from "./settings/Settings";
 import { useState, useContext, useEffect } from "react";
 import SignUp from "./SignUp";
@@ -75,30 +75,15 @@ function App() {
       <div className='mycontainer'>
         <Nav />
         {isLoading && <Spinner animation='grow' variant='light' />}
-        <Switch>
-          <Route path='/signup'>
-            <SignUp />
-          </Route>
-          <Route path='/login'>
-            <Login />
-          </Route>
-          <Route path='/search'>
-            <Search />
-          </Route>
-          <Route path={`/profile/:id`}>
-            <UserProfile />
-          </Route>
-          <Route path={`/tweet/:id`}>
-            <PostPage />
-          </Route>
-          <Route path='/settings'>
-            <Settings changeUsername={changeUsername} changeBio={changeBio} />
-          </Route>
-          <Route path='/'>
-            {currentUser && <TweetsContainer username={username} />}
-            {!currentUser && <Login />}
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path='/signup' element={<SignUp/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/search' element={<Search/>}/>
+          <Route path={`/profile/:id`}element={<UserProfile/>}/>
+          <Route path={`/tweet/:id`}element={<PostPage/>}/>
+          <Route path='/settings'element={<Settings changeUsername={changeUsername} changeBio={changeBio}/>}/>
+          <Route path='/' element={currentUser ? <TweetsContainer username={username}/> : <Login/>}/>
+        </Routes>
       </div>
     </Router>
   );

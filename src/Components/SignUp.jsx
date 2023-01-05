@@ -1,5 +1,4 @@
 import { useCallback } from 'react';
-import {withRouter} from 'react-router'
 import firebase from '../firebase-cred/firebase'
 import 'firebase/auth'
 import Button from 'react-bootstrap/Button'
@@ -48,4 +47,4 @@ const SignUp = ( {history} ) => {
 
 }
 
-export default withRouter(SignUp)
+export default SignUp
